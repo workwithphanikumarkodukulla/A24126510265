@@ -6,6 +6,7 @@ def countSort(a):
     b = [0] * len(counts)
     b[0] = counts[0]
     for i in a:
+        # COMMENT
         counts[i] += 1
     for i in range(len(counts)):
         b[i] = counts[i] + b[i-1]
